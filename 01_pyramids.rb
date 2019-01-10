@@ -1,23 +1,26 @@
 def pyramid
-number_of_pyramid = gets_to_chomp.to_i
+tableau = Array.new
+  puts " Bonjour, bienvenue dans cette pyramide ! Combien d'étages voulez-vous ?"
+  number_of_pyramid = gets.chomp.to_i
+
   number_of_pyramid.times {|n|
     print ' ' * (number_of_pyramid - n)
-    puts '*' * (2 * n + 1)
-  }
+    tableau = puts '#' * (2 * n + 1) 
+
+i = 0
+while i < number_of_pyramid
+  puts "#{tableau[i]}"
+  i += 1
 end
+   }
+end
+
 pyramid 
 
+ 
 
 
-
-
-def reverse_pyramid (number)
-  number.times { |n|
-  print ' ' * (number -  n)
-  puts '*' * ( n - 1)
-  }
-
-end
-
-reverse_pyramid 5
+#def losange
+#  puts " Bonjour, bienvenue dans cette pyramide ! Combien d'étages voulez-vous ?"
+#  number_of_pyramid = gets.chomp.to_i
 
