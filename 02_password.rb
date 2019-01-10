@@ -20,7 +20,7 @@ def login
 
 	  puts "Veuillez rentrer votre mot de passe ?"
 	  user_answer = gets.chomp.to_s
-	
+		key = user_answer	
 	   if key == user_answer
 			
 		exit = true
